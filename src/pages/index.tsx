@@ -6,7 +6,7 @@ import { Button } from 'antd';
 const Home: NextPage = () => {
   return (
     <div className="App">
-    <Button type="primary"  >Button</Button>
+    <Button type="primary"  >Hello World</Button>
   </div>
   )
 }
