@@ -10,6 +10,10 @@ module.exports = withAntdLess({
 
   // Other Config Here...
 
+  images: {
+    domains: ["127.0.0.1"],
+  },
+
   webpack(config) {
     return config;
   },
