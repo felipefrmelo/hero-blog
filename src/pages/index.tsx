@@ -1,7 +1,3 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { Button } from "antd";
 import { PostPreviewProps, Posts } from "../components";
 import { getPosts } from "../services/api";
 
