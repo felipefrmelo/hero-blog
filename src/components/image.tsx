@@ -4,5 +4,5 @@ import { baseUrl } from "../services/api";
 
 export const Image = ({ src, alt, ...props }: ImageProps) => {
   console.log(`${baseUrl}${src}`);
-  return <NextImage src={`${baseUrl}${src}`} alt={alt} {...props} />;
+  return <NextImage src={`${process.env.BASE_URL}${src}`} alt={alt} {...props} />;
 };
