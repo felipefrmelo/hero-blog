@@ -1,2 +1,2 @@
-export  *  from "./post"
-export  *  from "./author"
+export * from "./feed-image";
+export * from "./post";

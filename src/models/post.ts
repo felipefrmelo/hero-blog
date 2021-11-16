@@ -1,11 +1,15 @@
-import { Author } from "./author";
+import { FeedImage } from ".";
 
-export type PostType = {
-  slug: string;
+export interface PostPreview {
+  id: number;
   title: string;
+  feedImage?: FeedImage;
+  author: string;
+  intro: string;
   date: string;
-  feedImage: string;
-  author: Author;
-  excerpt: string;
+  tags?: string[];
+}
+
+export interface PostDetail extends PostPreview {
   body: string;
-};
+}

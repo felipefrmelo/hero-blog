@@ -1,20 +1,15 @@
 import { Avatar } from "../avatar";
 import { render, screen } from "@testing-library/react";
-import { Author, createAuthor } from "../../models";
 
 describe("Avatar", () => {
-  let author: Author;
+  let author: string;
   beforeEach(() => {
-    author = createAuthor("John Doe", "https://avatars0.any");
+    author = "John Doe";
   });
 
-  it("should render", () => {
+  it("should render a avatar", () => {
     render(<Avatar author={author} />);
-  });
-
-  it("should render a image", () => {
-    render(<Avatar author={author} />);
-    expect(screen.getByRole("img")).toHaveAttribute("alt", "John Doe");
+    expect(screen.getByText("J")).toBeInTheDocument();
   });
 
   it("should render a name", () => {
