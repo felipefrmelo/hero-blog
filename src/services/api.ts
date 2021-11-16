@@ -1,5 +1,7 @@
 import { PostDetail, PostPreview } from "../models";
-import { baseUrl, createFeedImage } from "./utils";
+import { createFeedImage } from "./utils";
+
+export const baseUrl = process.env.BASE_URL;
 
 const postPreviewFromJson = (json: any): PostPreview => {
   return {
