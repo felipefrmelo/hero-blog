@@ -11,7 +11,7 @@ module.exports = withAntdLess({
   // Other Config Here...
 
   images: {
-    domains: ["127.0.0.1"],
+    domains: ["127.0.0.1", "herokuapp.com"],
   },
 
   webpack(config) {
