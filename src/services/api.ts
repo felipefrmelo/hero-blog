@@ -1,7 +1,7 @@
 import { PostDetail, PostPreview } from "../models";
 import { createFeedImage } from "./utils";
 
-export const baseUrl = process.env.NODE_ENV === "production" ? "https://agile-stream-81419.herokuapp.com" : "http://127.0.0.1:8000";
+export const baseUrl = "https://agile-stream-81419.herokuapp.com"
 
 const postPreviewFromJson = (json: any): PostPreview => {
   return {
